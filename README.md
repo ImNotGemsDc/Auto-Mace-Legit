@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔨 MaceHelper
+# 🔨 AutoMaceLegit
 
 **Mace combat helper and PvP macros for Fabric, with an in-game config menu.**
 
@@ -47,6 +47,38 @@
 - **Macros** tab: click a key button, press the new key (`Esc` clears it) and adjust the delays.
 - Keep the mace, ender pearls, wind charges and elytra in your hotbar or inventory.
 - Settings are saved automatically in `config/automace.json`.
+
+## ❓ FAQ
+
+<details>
+<summary><b>The game crashes on startup or the mod doesn't load. How do I fix it?</b></summary>
+<br>
+Make sure you have <b>Fabric API</b> installed in your <code>mods</code> folder, and verify that both <b>Fabric API</b> and <b>AutoMaceLegit</b> match your exact Minecraft version (<code>1.21.1</code> or <code>1.21.11</code>).
+</details>
+
+<details>
+<summary><b>I downloaded the mod, why isn't it working?</b></summary>
+<br>
+Check the filename in your <code>mods</code> folder. If it ends with <code>-sources.jar</code>, delete it and download the regular <code>.jar</code> file from the <a href="https://github.com/ImNotGemsDc/Auto-Mace-Legit/releases">Releases</a> page instead.
+</details>
+
+<details>
+<summary><b>Is this mod detectable by server anticheats?</b></summary>
+<br>
+While the mod includes randomized delays to look more natural, macros and auto-attack features can still trigger strict anticheats (like Grim or Vulcan) depending on your delay settings. Always test your config carefully and check server rules first.
+</details>
+
+<details>
+<summary><b>How do I reset my settings to default?</b></summary>
+<br>
+Close Minecraft, go to your <code>.minecraft/config/</code> folder, and delete the <code>automace.json</code> file. A fresh config file will be generated the next time you launch the game.
+</details>
+
+<details>
+<summary><b>Will you add support for other Minecraft versions?</b></summary>
+<br>
+Yes! More versions are planned and coming soon. Keep an eye on the <a href="https://github.com/ImNotGemsDc/Auto-Mace-Legit/releases">Releases</a> tab for updates.
+</details>
 
 ## ⚠️ Disclaimer
 
