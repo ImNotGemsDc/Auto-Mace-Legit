@@ -11,7 +11,7 @@
 ![Release](https://img.shields.io/github/v/release/ImNotGemsDc/Auto-Mace-Legit?style=for-the-badge)
 ![Downloads](https://img.shields.io/github/downloads/ImNotGemsDc/Auto-Mace-Legit/total?style=for-the-badge)
 
-[⬇️ Download](https://github.com/ImNotGemsDc/Auto-Mace-Legit/releases) · [☕ Support](https://cafecito.app/imnot_gemsdc)
+[⬇️ Download](https://github.com/ImNotGemsDc/Auto-Mace-Legit/releases) · [💬 Comments](https://github.com/ImNotGemsDc/Auto-Mace-Legit/discussions) · [☕ Support](https://cafecito.app/imnot_gemsdc)
 
 </div>
 
@@ -79,6 +79,11 @@ Close Minecraft, go to your <code>.minecraft/config/</code> folder, and delete t
 <br>
 Yes! More versions are planned and coming soon. Keep an eye on the <a href="https://github.com/ImNotGemsDc/Auto-Mace-Legit/releases">Releases</a> tab for updates.
 </details>
+
+## 💬 Feedback & Comments
+
+Have suggestions, questions, or just want to leave a comment about the mod?  
+Join the conversation in the **[Discussions](https://github.com/ImNotGemsDc/Auto-Mace-Legit/discussions)** tab!
 
 ## ⚠️ Disclaimer
 
