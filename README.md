@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔨 AutoMaceLegit
+# 🔨 MaceHelper
 
 **Mace combat helper and PvP macros for Fabric, with an in-game config menu.**
 
