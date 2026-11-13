@@ -1,0 +1,29 @@
+name: Build mod
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: temurin
+      - name: Build
+        run: |
+          unzip -q template.zip -d proj
+          ROOT=$(dirname "$(find proj -maxdepth 2 -name gradlew | head -1)")
+          if [ -d "$ROOT/src/client" ]; then D="$ROOT/src/client/java"; else D="$ROOT/src/main/java"; fi
+          mkdir -p "$D/com/automace"
+          cp AutoMaceClient.java "$D/com/automace/"
+          F="$ROOT/src/main/resources/fabric.mod.json"
+          jq '.entrypoints.client=["com.automace.AutoMaceClient"]' "$F" > tmp.json && mv tmp.json "$F"
+          cd "$ROOT"
+          sed -i 's/^mod_version=.*/mod_version=1.0.2/' gradle.properties
+          chmod +x gradlew
+          ./gradlew build
+          echo "ROOT=$ROOT" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mod-jar
+          path: ${{ env.ROOT }}/build/libs/*.jar
