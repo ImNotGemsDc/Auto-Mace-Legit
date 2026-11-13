@@ -19,7 +19,7 @@ jobs:
           F="$ROOT/src/main/resources/fabric.mod.json"
           jq '.entrypoints.client=["com.automace.AutoMaceClient"]' "$F" > tmp.json && mv tmp.json "$F"
           cd "$ROOT"
-          sed -i 's/^mod_version=.*/mod_version=1.0.6/' gradle.properties
+          sed -i 's/^mod_version=.*/mod_version=1.0.7/' gradle.properties
           chmod +x gradlew
           ./gradlew build
           echo "ROOT=$ROOT" >> $GITHUB_ENV
